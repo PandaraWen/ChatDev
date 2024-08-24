@@ -91,8 +91,8 @@ class OpenAIModel(ModelBackend):
                 "gpt-4-0613": 8192,
                 "gpt-4-32k": 32768,
                 "gpt-4-turbo": 100000,
-                "gpt-4o": 128000,
-                "gpt-4o-mini": 128000,
+                "gpt-4o": 4096,
+                "gpt-4o-mini": 16384,
             }
             num_max_token = num_max_token_map[self.model_type.value]
             num_max_completion_tokens = num_max_token - num_prompt_tokens
@@ -124,8 +124,8 @@ class OpenAIModel(ModelBackend):
                 "gpt-4-0613": 8192,
                 "gpt-4-32k": 32768,
                 "gpt-4-turbo": 100000,
-                "gpt-4o": 128000,
-                "gpt-4o-mini": 128000,
+                "gpt-4o": 4096,
+                "gpt-4o-mini": 16384,
             }
             num_max_token = num_max_token_map[self.model_type.value]
             num_max_completion_tokens = num_max_token - num_prompt_tokens

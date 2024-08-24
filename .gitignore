@@ -2,6 +2,8 @@
 .DS_Store
 .idea
 .vscode
+warehouse/
+～/
 
 # env
 .env/
